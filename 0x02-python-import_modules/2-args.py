@@ -14,4 +14,4 @@ if __name__ == "__main__":
     i = 1
     while (i < leng):
         print("{}: {}".format(i, arg[i]), end="\n")
-        i+=1
+        i += 1

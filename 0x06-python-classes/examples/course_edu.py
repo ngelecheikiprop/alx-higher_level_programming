@@ -40,3 +40,18 @@ class A:
 
 x = A()
 
+#adding to init to our initial class
+class Robot:
+    def __init__(self, name = None):
+        self.name  = name
+    def say_hi(self):
+        if self.name:
+            print("Hi I am {}".format(self.name))
+        else:
+            print("I dont have a name but hi anyway")
+
+x = Robot()
+x.say_hi()
+
+y = Robot("Kiprop")
+y.say_hi()

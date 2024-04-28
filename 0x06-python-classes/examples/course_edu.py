@@ -80,3 +80,23 @@ x.say_hi()
 y = Robot()
 y.set_name(x.get_name())
 y.say_hi()
+
+#Public, - Protected-, and Private Attributes
+print("Public, - Protected-, and Private Attributes")
+print("------------------------")
+
+class A:
+    def __init__(self):
+        self.__priv = "I am private"
+        self._prot = " I am protected"
+        self.pub = "I am public"
+
+x  = A()
+print(x.pub)
+x.pub = x.pub + "and I can and have changed"
+print(x.pub)
+print()
+print(x._prot)
+print("------")
+print(x.__priv)
+print()

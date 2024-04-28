@@ -55,3 +55,28 @@ x.say_hi()
 
 y = Robot("Kiprop")
 y.say_hi()
+print("---------------")
+#using getters and setters
+
+class Robot:
+    def __init__(self, name=None):
+        self.name = name
+    def set_name(self, name):
+        self.name = name
+    def get_name(self):
+        return self.name
+
+    def say_hi(self):
+        if self.name:
+            print("Hi I am {}".format(self.name))
+        else:
+            print("no names, just hi")
+
+x = Robot()
+x.say_hi()
+x.set_name("kip")
+x.say_hi()
+
+y = Robot()
+y.set_name(x.get_name())
+y.say_hi()

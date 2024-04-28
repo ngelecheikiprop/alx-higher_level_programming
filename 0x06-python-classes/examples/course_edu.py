@@ -31,3 +31,12 @@ class Robot:
 x = Robot()
 x.name = "kip"
 hi(x)
+
+#the __INIT__ METHOD
+
+class A:
+    def __init__(self):
+        print("init is running now")
+
+x = A()
+

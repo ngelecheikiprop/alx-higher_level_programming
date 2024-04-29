@@ -2,6 +2,8 @@
 """
 Contains a class square
 """
+
+
 class Square:
     """
      class Square that defines a square by: (based on 0-square.py)

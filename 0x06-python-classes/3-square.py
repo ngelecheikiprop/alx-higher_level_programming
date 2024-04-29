@@ -12,7 +12,7 @@ Public instance method: def area(self): that returns the current square area
 """
 
 
-class  Square:
+class Square:
     """class Square that defines a square by: (based on 2-square.py)
 
 Private instance attribute: size

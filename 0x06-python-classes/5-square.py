@@ -61,8 +61,11 @@ class Square:
     def my_print(self):
         """Prints a representation of the square using '#' characters.
 
-            This method prints a visual representation of the square using '#' characters. The number of
-            rows and columns in the representation is equal to the size of the square's side (`self.size`).
+            This method prints a visual representation
+            of the square using '#' characters.
+             The number of rows and columns in the
+             representation is equal to the size of
+             the square's side (`self.size`).
              If the size is 0, an empty line is printed.
 
             Example:
@@ -74,7 +77,8 @@ class Square:
                 ```
 
             Note:
-                This method assumes `self.size` has been properly initialized and validated (non-negative integer).
+                This method assumes `self.size` has been
+                properly initialized and validated (non-negative integer).
 
             Raises:
                 None

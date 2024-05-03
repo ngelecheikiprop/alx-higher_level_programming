@@ -1,0 +1,3 @@
+>>> from python_org import factorial
+>>> factorial(6)
+120

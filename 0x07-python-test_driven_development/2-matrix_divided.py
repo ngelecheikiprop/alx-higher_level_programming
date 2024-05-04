@@ -12,14 +12,14 @@ def matrix_divided(matrix, div):
     Returns:
         Returns a new matrix with all values divided by div
     """
+    error_mesg = ("matrix must be a matrix (list of lists)"
+                  " of integers/floats")
     for i in matrix:
         if type(i) is not list:
-            raise TypeError("matrix must be a matrix (list of lists)",
-                            " of integers/floats")
+            raise TypeError(error_mesg)
         for j in i:
             if type(j) not in [int, float]:
-                raise TypeError("matrix must be a matrix (list of lists)",
-                                " of integers/floats")
+                raise TypeError(error_mesg)
 
     for x in range(len(matrix) - 1):
         if len(matrix[x]) != len(matrix[x + 1]):

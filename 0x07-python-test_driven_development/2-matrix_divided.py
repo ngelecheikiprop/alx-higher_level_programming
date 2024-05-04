@@ -2,6 +2,8 @@
 """contains the following functions:
     -matrix_divided - to divide elements of a matrix by a number given
 """
+
+
 def matrix_divided(matrix, div):
     """Divides all elements of a matrix
     Args:
@@ -12,12 +14,14 @@ def matrix_divided(matrix, div):
     """
     for i in matrix:
         if type(i) is not list:
-            raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+            raise TypeError("matrix must be a matrix (list of lists)",
+                            " of integers/floats")
         for j in i:
             if type(j) not in [int, float]:
-                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+                raise TypeError("matrix must be a matrix (list of lists)",
+                                " of integers/floats")
 
-    for x in range(len(matrix)- 1):
+    for x in range(len(matrix) - 1):
         if len(matrix[x]) != len(matrix[x + 1]):
             raise TypeError("Each row of the matrix must have the same size")
 

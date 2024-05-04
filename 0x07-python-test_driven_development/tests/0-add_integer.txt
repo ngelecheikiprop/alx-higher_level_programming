@@ -13,6 +13,9 @@
 4
 >>> k.add_integer(-3, -7)
 -10
+>>> k.add_integer(None)
+Traceback (most recent call last):
+TypeError: a must be an integer
 >>> k.add_integer(4, 'school')
 Traceback (most recent call last):
 TypeError: b must be an integer

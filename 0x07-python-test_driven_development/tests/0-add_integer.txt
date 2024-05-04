@@ -9,6 +9,8 @@
 9
 >>> k.add_integer(2)
 100
+>>> k.add_integer(-1, 5)
+4
 >>> k.add_integer(4, 'school')
 Traceback (most recent call last):
 TypeError: b must be an integer

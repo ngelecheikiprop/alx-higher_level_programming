@@ -1,0 +1,22 @@
+==============================
+how to Use doctest_in_help.py
+==============================
+
+This library is very simple
+
+Numbers
+========
+
+''my_function()'' returns the equivalent of using '*' operator
+
+::
+	>>> from doctest_in_help import my_function
+	>>> my_function(2, 3)
+	6
+
+it also works with floating point values
+
+::
+	>>> my_function(2.0, 3)
+	6.0
+

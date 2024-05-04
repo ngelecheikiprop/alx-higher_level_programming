@@ -2,6 +2,8 @@
 """This module has the function 0-add_integer add_integer
 to do addition
 """
+
+
 def add_integer(a, b=98):
     """Adds two intergers"""
     if type(a) not in [int, float]:

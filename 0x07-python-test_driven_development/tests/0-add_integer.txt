@@ -26,4 +26,6 @@ TypeError: a must be an integer
 <class 'int'>
 >>> type(k.add_integer(4, 3.0))
 <class 'int'>
-
+>>> k.add_integer()
+Traceback (most recent call last):
+TypeError: add_integer() missing 1 required positional argument: 'a'

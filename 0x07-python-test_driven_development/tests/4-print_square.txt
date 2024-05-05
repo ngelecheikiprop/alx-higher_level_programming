@@ -13,3 +13,5 @@ ValueError: size must be >= 0
 >>> k.print_square(-2.345)
 Traceback (most recent call last):
 TypeError: size must be an integer
+>>> k.print_square()
+TypeError: print_square() missing 1 required positional argument: 'size'

@@ -32,3 +32,6 @@ TypeError: add_integer() missing 1 required positional argument: 'a'
 >>> k.add_integer(float('NaN'))
 Traceback (most recent call last):
 ValueError: cannot convert float NaN to integer
+>>> k.add_integer(float('inf'))
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer

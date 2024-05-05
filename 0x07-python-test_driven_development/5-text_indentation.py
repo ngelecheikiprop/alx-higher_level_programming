@@ -10,6 +10,13 @@
 
 
 def text_indentation(text):
+    """Prints text and puts two new lines
+    when it encounters: . , ? and :
+    Args:
+        the text to print
+    Return:
+        prints interting two lines where necesary
+    """
     if type(text) is not str:
         raise TypeError("text must be a string")
     for letter in text:

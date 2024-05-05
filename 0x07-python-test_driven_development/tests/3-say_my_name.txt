@@ -3,6 +3,8 @@
 My name is David 
 >>> s.say_my_name('David','Kiprop')
 My name is David Kiprop
+>>> s.say_my_name('','')
+My name is  
 >>> s.say_my_name(5,'Kiprop')
 Traceback (most recent call last):
 TypeError: first_name must be a string

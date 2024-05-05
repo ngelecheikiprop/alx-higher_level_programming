@@ -14,3 +14,6 @@ ZeroDivisionError: division by zero
 >>> k.matrix_divided([[1,2],[1,2]], 'k')
 Traceback (most recent call last):
 TypeError: div must be a number
+>>> k.matrix_divided([[1,2],[1,2]], 'k')
+Traceback (most recent call last):
+TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'

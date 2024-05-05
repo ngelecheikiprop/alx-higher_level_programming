@@ -1,0 +1,15 @@
+>>> k = __import__('4-print_square')
+>>> k.print_square(4)
+####
+####
+####
+####
+>>> k.print_square('t')
+Traceback (most recent call last):
+TypeError: size must be an integer
+>>> k.print_square(-2)
+Traceback (most recent call last):
+ValueError: size must be >= 0
+>>> k.print_square(-2.345)
+Traceback (most recent call last):
+TypeError: size must be an integer

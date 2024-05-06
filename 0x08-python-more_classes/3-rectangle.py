@@ -53,6 +53,8 @@ class Rectangle:
         string = ""
         for i in range(self.__height):
             for j in range(self.__width):
-                string += "#"
-            string += "\n"
+                string =f"{string}#"
+            if i == self.__height - 1:
+                continue
+            string = f"{string}\n"
         return string

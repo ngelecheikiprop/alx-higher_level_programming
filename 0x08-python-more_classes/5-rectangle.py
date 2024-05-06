@@ -1,8 +1,4 @@
 #!/usr/bin/python3
-"""enhancing our rectnagle class with str"""
-
-
-#!/usr/bin/python3
 """ this module enhaves the rectangle class from the previous one"""
 
 
@@ -58,6 +54,7 @@ class Rectangle:
         return string
 
     def __repr__(self):
-        return "Rectangle(" + str(self.__width) + "," + str(self.__height) + ")"
+        return f"Rectangle({self.__width}, {self.__height})"
+
     def __del__(self):
         print("Bye rectangle...")

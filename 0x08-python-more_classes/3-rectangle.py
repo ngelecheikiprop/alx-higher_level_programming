@@ -1,8 +1,4 @@
 #!/usr/bin/python3
-"""enhancing our rectnagle class with str"""
-
-
-#!/usr/bin/python3
 """ this module enhaves the rectangle class from the previous one"""
 
 
@@ -53,7 +49,7 @@ class Rectangle:
         string = ""
         for i in range(self.__height):
             for j in range(self.__width):
-                string =f"{string}#"
+                string = f"{string}#"
             if i == self.__height - 1:
                 continue
             string = f"{string}\n"

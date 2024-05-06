@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """holds the rectangle class"""
 
 

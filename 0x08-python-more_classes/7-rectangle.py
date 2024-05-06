@@ -54,11 +54,14 @@ class Rectangle:
         for i in range(self.__height):
             for j in range(self.__width):
                 string += str(self.print_symbol)
+            if i == self.__height - 1:
+                continue
             string += "\n"
         return string
 
     def __repr__(self):
-        return "Rectangle(" + str(self.__width) + "," + str(self.__height) + ")"
+        return f"Rectangle({self.__width}, {self.__height})"
+
     def __del__(self):
         print("Bye rectangle...")
         type(self).number_of_instances -= 1

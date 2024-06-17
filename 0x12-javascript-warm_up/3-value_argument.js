@@ -1,10 +1,6 @@
 #!/usr/bin/node
-let count = 2;
-if (!(process.argv[count])) {
+if (!(process.argv[2])) {
   console.log('No argument');
 } else {
-  while (process.argv[count]) {
-    console.log(process.argv[count]);
-    count++;
-  }
+    console.log(process.argv[2]);
 }

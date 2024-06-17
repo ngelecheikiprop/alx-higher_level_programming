@@ -1,10 +1,9 @@
 #!/usr/bin/node
-const argvLen = process.argv.length;
-if (argvLen <= 2) {
+let count = 2;
+if (!(process.argv[count])) {
   console.log('No argument');
 } else {
-  let count = 2;
-  while (count <= argvLen) {
+  while (process.argv[count]) {
     console.log(process.argv[count]);
     count++;
   }

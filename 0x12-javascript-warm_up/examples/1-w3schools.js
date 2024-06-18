@@ -21,3 +21,8 @@ console.log(console.log(person['age']));
 console.log('reseting age ...');
 person.age = 25;
 console.log(`age is now: ${person.age}`);
+
+//creating new proerties
+console.log('creating hobby');
+person['hobby'] = 'carrrs';
+console.log(`hobby: ${person.hobby}`);

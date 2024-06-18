@@ -18,3 +18,6 @@ console.log('using brackets notation')
 console.log(console.log(person['age']));
 
 //reseting age
+console.log('reseting age ...');
+person.age = 25;
+console.log(`age is now: ${person.age}`);

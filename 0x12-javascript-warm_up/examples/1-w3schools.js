@@ -9,5 +9,12 @@ const person = {
         console.log(`Hi I'm ${this.name[0]}`)
     }
 };
+//using dot notation
 console.log(person.bio());
 console.log(person.introduceSelf());
+
+//using brackets notation
+console.log('using brackets notation')
+console.log(console.log(person['age']));
+
+//reseting age

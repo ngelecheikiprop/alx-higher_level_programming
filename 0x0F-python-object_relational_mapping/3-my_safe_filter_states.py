@@ -17,7 +17,7 @@ if __name__ == "__main__":
         db=database)
     cur = db.cursor()
     cur.execute("""SELECT * FROM states
-                WHERE name='{}'
+                WHERE name=\'{}\'
                 ORDER BY id ASC;""".format(name))
     states = cur.fetchall()
     for state in states:

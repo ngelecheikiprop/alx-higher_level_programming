@@ -26,7 +26,7 @@ if __name__ == "__main__":
     for state in states:
         print(state[0], end="")
         if state is not states[-1]:
-            print(", ",end="")
+            print(", ", end="")
     print()
     cur.close()
     db.close()

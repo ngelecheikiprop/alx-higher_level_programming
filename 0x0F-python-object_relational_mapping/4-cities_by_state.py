@@ -15,12 +15,13 @@ if __name__ == "__main__":
         passwd=password,
         db=database)
     cur = db.cursor()
-    cur.execute("""SELECT cities.id,cities.name AS city_name, states.name AS state_name 
-FROM cities
-JOIN states ON cities.state_id = states.id
-ORDER BY cities.id ASC;
-
-""")
+    cur.execute("""SELECT cities.id,
+                cities.name AS city_name,
+                states.name AS state_name
+                FROM cities
+                JOIN states ON cities.state_id = states.id
+                ORDER BY cities.id ASC;
+                """)
     states = cur.fetchall()
     for state in states:
         print(state)

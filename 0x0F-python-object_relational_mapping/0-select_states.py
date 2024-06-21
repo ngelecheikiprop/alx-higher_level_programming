@@ -3,12 +3,14 @@
 from the database hbtn_0e_0_usa"""
 import MySQLdb
 import sys
-db = MySQLdb.connect(f"localhost", "${sys.argv[1]}", "${sys.argv[2]}", "${sys.argv[3]}")
+username = sys.argv[1]
+password = sys.argv[2]
+database = sys.argv[3]
+db = MySQLdb.connect(host='localhost', user=username, passwd=password, db=database) 
 cur = db.cursor()
-cur.execute(f"""USE ${sys.argv[3]}""")
 cur.execute("""SELECT * FROM states""")
-query_rows = cur.fetchall()
-for row in query_rows:
-    print(row)
+states = cur.fetchall()
+for state in states:
+    print(state)
 cur.close()
 db.close()

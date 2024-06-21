@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-#!/usr/bin/python3
 """print the states table"""
 if __name__ == "__main__":
     from sqlalchemy import create_engine

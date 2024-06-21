@@ -1,6 +1,7 @@
 #!/usr/bin/python3
+"""print the states table"""
 if __name__=="__main__":
-  from sqlalchemy import create_engine, Column, Integer, String
+  from sqlalchemy import create_engine
   from sqlalchemy.ext.declarative import declarative_base
   from sqlalchemy.orm import sessionmaker
   from model_state import Base, State

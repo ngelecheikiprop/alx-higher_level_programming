@@ -13,6 +13,6 @@ if __name__ == "__main__":
     Session = sessionmaker(bind=engine)
     Base.metadata.create_all(engine)
     session = Session()
-    state = session.query(State).order_by(State.id)[0]
+    state =  session.query(State).order_by(State.id).first()
     print("{}: {}".format(state.id, state.name))
     session.close()

@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+'using urllib to make a simple request'
 if __name__ == "__main__":
     import urllib.request
     url = "https://alx-intranet.hbtn.io/status"

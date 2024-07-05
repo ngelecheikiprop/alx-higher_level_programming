@@ -9,4 +9,9 @@ if __name__ == "__main__":
     url = 'http://0.0.0.0:5000/search_user'
     data = {"q":q}
     response = requests.post(url, data)
-    print(type(response.json()))
+    print(type(response))
+    reponse = response.json()
+    if response is dict:
+        print("a json")
+    else:
+        print("not json")

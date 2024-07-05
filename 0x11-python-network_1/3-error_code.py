@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+'makign requests and get errors'
 if __name__ == "__main__":
     import urllib.request
     import urllib.error

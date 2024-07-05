@@ -11,7 +11,7 @@ if __name__ == "__main__":
     response = requests.post(url, data)
     print(type(response))
     reponse = response.json()
-    if response is dict:
+    if isinstance(response, dict):
         print("a json")
     else:
         print("not json")

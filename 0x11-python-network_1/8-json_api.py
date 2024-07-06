@@ -10,10 +10,8 @@ if __name__ == "__main__":
     url = 'http://0.0.0.0:5000/search_user'
     data = {"q": q}
     response = requests.post(url, data)
-    print('The response:',type(response))
-    print(response)
     data = response.json()
-    if response.headers.get('Content-Type') is not 'application/json':
+    if response.headers.get('Content-Type') !=  "application/json":
         print("Not a valid JSON")
     elif not data:
         print("No result")

@@ -13,7 +13,7 @@ if __name__ == "__main__":
     data = response.json()
     if not isinstance(data, dict):
         print("Not a valid JSON")
-    if not data:
+    elif not data:
         print("No result")
     else:
         print("[{}] {}".format(data.get('id'), data.get('name')))

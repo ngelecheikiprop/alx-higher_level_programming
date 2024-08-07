@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Test jquery</title>
+		 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	</head>
+	<body>
+		<p>hello</p>
+		<button>Click me</button>
+		<script type="text/javascript">
+			$(function(){
+				$("button").bind("click", function(){
+					$("p").text("you touch something");
+				});
+			});
+		</script>
+	</body>
+</html>
